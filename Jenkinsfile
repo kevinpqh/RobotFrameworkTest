@@ -5,11 +5,6 @@ pipeline {
         CT_SERVER = 'http://ct.application.com/'
     }
     stages {
-	    stage('intialize') {
-            steps {
-                sh 'echo "PATH= ${PATH}'
-            }
-	    }
     
 	    stage('Run Robot Tests') {
 	        steps {
