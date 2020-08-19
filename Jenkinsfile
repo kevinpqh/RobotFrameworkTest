@@ -8,7 +8,6 @@ pipeline {
     
 	    stage('Run Robot Tests') {
 	        steps {
-                sh 'echo "PATH= ${PATH}'
                 sh 'echo INICIO'
                 //sh 'python3 -m rflint --ignore LineTooLong GoogleTest1.robot'
                 sh 'echo FIN'
