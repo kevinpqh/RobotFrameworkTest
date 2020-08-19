@@ -9,7 +9,7 @@ pipeline {
 	    stage('Run Robot Tests') {
 	        steps {
                 sh 'echo INICIO'
-                //sh 'python3 -m rflint --ignore LineTooLong GoogleTest1.robot'
+                sh 'python3 -m rflint --ignore LineTooLong GoogleTest1.robot'
                 sh 'echo FIN'
                 // sh 'python3 -m robot.run --NoStatusRC --variable SERVER:${CT_SERVER} --outputdir reports1 .'
                 // sh 'python3 -m robot.run --NoStatusRC --variable SERVER:${CT_SERVER} --rerunfailed reports1/output.xml --outputdir reports .'
